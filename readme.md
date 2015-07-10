@@ -21,7 +21,7 @@ var gulp = require('gulp');
 var conventionalChangelog = require('gulp-conventional-changelog');
 
 gulp.task('default', function () {
-  return gulp.src('CHANGELOG.md', {
+  return gulp.src('./CHANGELOG.md', {
     buffer: false
   })
     .pipe(conventionalChangelog({
@@ -38,7 +38,7 @@ var gulp = require('gulp');
 var conventionalChangelog = require('gulp-conventional-changelog');
 
 gulp.task('default', function () {
-  return gulp.src('CHANGELOG.md')
+  return gulp.src('./CHANGELOG.md')
     .pipe(conventionalChangelog({
       preset: 'angular'
     }))
